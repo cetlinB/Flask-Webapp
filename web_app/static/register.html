@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{{url_for('static', filename='script/register.js')}}" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <p2>Zarejestruj się!</p2>
+        <nav>
+            <a href="index">Strona główna</a>
+            <a href="login">Logowanie</a>
+        </nav>
+    </header>
+    <form id="register_form">
+        <ul>
+            <li>
+                <label>Imię:</label>
+                <input type="text" id="firstname" maxlength="64"/>
+            </li>
+            <li>
+                <label>Nazwisko:</label>
+                <input type="text" id="lastname" maxlength="64"/>
+            </li>
+            <li>
+                <label>Login:</label>
+                <input type="text" id="login" maxlength="128" onchange="checkLoginAvilable()"/>
+            </li>
+            <li>
+                <label>Hasło:</label>
+                <input type="password" id="password" maxlength="128"/>
+                <p id="pass-tip" hidden>Hasło musi zawierać co najmniej 8 znaków, jedną małą i jedną wielką literę, oraz jedną cyfrę.</p>
+            </li>
+            <li>
+                <label>Powtórz hasło:</label>
+                <input type="password" id="repassword" maxlength="128"/>
+            </li>
+            <li>
+                <input type="button" onclick="sendForm()" value="Submit"/>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

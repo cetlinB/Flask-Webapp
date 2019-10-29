@@ -1,0 +1,28 @@
+header {
+  background: #F0FAFA;
+  font-family: lucida;
+  color: #00FF00;
+}
+
+footer {
+  background: #FF9F8F;
+  color: #000088;
+}
+
+table tr td {
+  border: 1px solid #0FEFEF;
+}
+
+tr:nth-child(odd) {
+  background-color: darkolivegreen;
+}
+
+tr:nth-child(even) {
+  background-color: indianred;
+}
+
+thead tr {
+  background-color: bisque !important;
+}
+
+/*# sourceMappingURL=main.css.map */

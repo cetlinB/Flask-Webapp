@@ -1,0 +1,34 @@
+$head-color: #00FF00;
+$head-bg-color: #F0FAFA;
+$main-font: lucida;
+
+
+$footer-bg-color: #FF9F8F;
+$footer-color: #000088;
+
+header {
+  background: $head-bg-color;
+  font-family: $main-font;
+  color: $head-color;
+}
+
+footer {
+  background: $footer-bg-color;
+  color: $footer-color;
+}
+
+table tr td {
+  border: 1px solid #0FEFEF;
+}
+
+tr:nth-child(odd){
+  background-color: darkolivegreen;
+}
+
+tr:nth-child(even){
+  background-color: indianred;
+}
+
+thead tr {
+  background-color: bisque !important;
+}
